@@ -1,0 +1,12 @@
+function printFlush(messageName) {
+    mlog("printflush messageName");
+}
+
+function print(text) {
+    mlog("print text");
+}
+
+function sensor(data, building) {
+    mlog("sensor sensorResult building data");
+    return sensorResult;
+}

@@ -1,0 +1,40 @@
+set expressionResult1 255
+set red expressionResult1
+set expressionResult2 255
+set green expressionResult2
+set expressionResult3 255
+set blue expressionResult3
+draw clear red green blue 0 0 0
+set expressionResult4 display1
+set displayName expressionResult4
+drawflush displayName
+set expressionResult5 switch1
+set sensorName expressionResult5
+set expressionResult6 @enabled
+set data expressionResult6
+set expressionResult7 sensorName
+set building expressionResult7
+sensor sensorResult building data
+set expressionResult8 sensorResult
+set returnStatement9 expressionResult8
+set expressionResult9 returnStatement9
+set enabled expressionResult9
+set expressionResult10 enabled
+set ifCondition expressionResult10
+jump 30 notEqual ifCondition true
+set expressionResult11 sensorName
+set building expressionResult11
+set expressionResult12 false
+set enabled expressionResult12
+control enabled building enabled 0 0 0
+set expressionResult13 enabled
+set returnStatement14 expressionResult13
+set ifCondition returnStatement14
+jump 67 notEqual ifCondition true
+set expressionResult14 "pressed"
+set text expressionResult14
+print text
+set expressionResult15 message1
+set messageName expressionResult15
+printflush messageName
+end

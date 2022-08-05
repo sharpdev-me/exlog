@@ -1,0 +1,20 @@
+import "memory";
+import "graphics";
+import "io";
+import "control";
+
+function switchPress(sensorName) {
+    var enabled = sensor(@enabled, sensorName);
+    if(enabled) {
+        controlEnabled(sensorName, false);
+    }
+    return enabled;
+}
+
+clear(255, 255, 255);
+drawFlush(display1);
+
+if(switchPress(switch1)) {
+    print("pressed");
+    printFlush(message1);
+}

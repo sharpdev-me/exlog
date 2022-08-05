@@ -1,0 +1,19 @@
+function controlEnabled(building, enabled) {
+    mlog("control enabled building enabled 0 0 0");
+}
+
+function controlShoot(building, x, y, shoot) {
+    mlog("control shoot building x y shoot 0");
+}
+
+function controlShootPrediction(building, unit, shoot) {
+    mlog("control shootp building unit shoot 0 0");
+}
+
+function controlConfigure(building, configure) {
+    mlog("control configure building configure 0 0 0");
+}
+
+function controlColor(building, red, green, blue) {
+    mlog("control color building red green blue 0");
+}

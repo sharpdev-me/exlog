@@ -1,0 +1,43 @@
+function drawFlush(displayName) {
+    mlog("drawflush displayName");
+}
+
+function clear(red, green, blue) {
+    mlog("draw clear red green blue 0 0 0");
+}
+
+function setColor(red, green, blue, alpha) {
+    mlog("draw color red green blue alpha 0 0");
+}
+
+function setStroke(width) {
+    mlog("draw stroke width 0 0 0 0 0");
+}
+
+function line(x1, y1, x2, y2) {
+    mlog("draw line x1 y1 x2 y2 0 0");
+}
+
+function rect(x, y, width, height) {
+    mlog("draw rect x y width height 0 0");
+}
+
+function lineRect(x, y, width, height) {
+    mlog("draw lineRect x y width height 0 0");
+}
+
+function poly(x, y, sides, radius, rotation) {
+    mlog("draw poly x y sides radius rotation 0");
+}
+
+function linePoly(x, y, sides, radius, rotation) {
+    mlog("draw linePoly x y sides radius rotation 0");
+}
+
+function triangle(x1, y1, x2, y2, x3, y3) {
+    mlog("draw triangle x1 y1 x2 y2 x3 y3");
+}
+
+function image(x, y, image, size, rotation) {
+    mlog("draw image x y image size rotation 0");
+}

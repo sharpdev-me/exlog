@@ -1,0 +1,8 @@
+function readMemory(bank, position) {
+    mlog("read readMemoryResult bank position");
+    return readMemoryResult;
+}
+
+function writeMemory(bank, position, value) {
+    mlog("write value bank position");
+}
