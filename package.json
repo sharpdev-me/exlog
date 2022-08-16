@@ -15,13 +15,12 @@
   },
   "scripts": {
     "antlr": "antlr4ts grammar/ExtLogicParser.g4 -o src/antlr -lib grammar/.antlr && antlr4ts grammar/ExtLogicLexer.g4 -o src/antlr -lib grammar/.antlr",
-    "clean": "rmdir src\\antlr /Q /S",
-    "buildAntlr": "yarn run clean && yarn run antlr",
-    "build": "tsc && tscp",
+    "clean": "rm -rf src/anltr",
+    "buildAntlr": "npm run clean && npm run antlr && cp src/antlr/grammar/* src/antlr/ && rm -rf src/antlr/grammar",
+    "buildExlog": "tsc && tscp",
+    "build": "npm run buildAntlr && npm run buildExlog",
     "dev": "ts-node src/index.ts",
-    "start": "node build/index.js",
-    "mine": "node build/index.js mindustry/main.exlog | clip",
-    "mineDev": "yarn run build && yarn run mine"
+    "start": "node build/index.js"
   },
   "bin": {
     "exlog": "build/bin/exlog.js"

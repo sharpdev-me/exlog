@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 import { existsSync, writeFile } from "fs";
 import { compile } from "../compiler";
 import * as path from "path";
